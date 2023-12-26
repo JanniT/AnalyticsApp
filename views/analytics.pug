@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= "Analytics App"
+  h2= "Fetch for immigration data" 
+    div(id="apiData")
+
+    br
+    label(for="genderDropDown", class="small-label") Choose gender: 
+    select(id="genderDropDown")
+        option(value="all") All
+        option(value="women") Women 
+        option(value="men") Men  
+    br
+    button(id="fetchDataButton") Fetch data
